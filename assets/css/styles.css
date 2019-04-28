@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(240, 213, 126);
+}
+.jumbotron {
+    background-image: url(../images/phone3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Times New Roman", Times, serif;
+    padding: 5px;
+    height: 150px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    color: rgb(230, 243, 245);
+    text-align: center;
+    text-shadow:
+		-1px -1px 0 rgb(34, 27, 27),
+		.1px -1px 0 rgb(34, 27, 27),
+		-1px 1px 0 rgb(34, 27, 27),
+		.1px 1px 0 rgb(34, 27, 27);
+}
+ 
+.display-4 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+
+} 
+
+.image-border {
+    background-color: white;
+}
+img.active {
+    border: 5px solid rgb(102, 236, 12);
+    
+}
+.panel {
+    margin-top: 0px;
+}
+
+.panel-footer {
+    font-family: "Times New Roman", Times, serif;
+    color: #58ACFA;
+    text-shadow:
+		-.5px -.5px 0 rgb(34, 27, 27),
+		.5px -.5px 0 rgb(34, 27, 27),
+		-.5px .5px 0 rgb(34, 27, 27),
+		.5px .5px 0 rgb(34, 27, 27);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+ 
+.bottom-display {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: rgb(228, 227, 177);
+}
+
+.search-btn {
+    margin-top: 10px;
+}
+
+.btn-secondary {
+    border-color: rgb(34, 29, 29);
+}
+
+ #map {
+    height: 300px;
+    width: 100%;
+    border-style: solid;
+    border-radius: 1px;
+    border-width: 1px;
+    border-color: black;
+ }
+
+ .results-display {
+    background-color: rgb(147, 214, 226);
+    display: block;
+    position: relative;
+    height: 300px;
+    overflow: auto;
+ }
+
+ td {
+     border-style: solid;
+     border-width: 1px;
+     border-color: black;
+     padding: 5px;
+     overflow-y: hidden;
+ }
+ 

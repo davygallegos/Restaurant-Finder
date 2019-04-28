@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Restaurant Locater</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Playfair+Display|Roboto+Slab" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <div id='container title'>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">HEALTHY RESTAURANT FINDER</h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div id="image1"></div>
+    </div>
+
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="panel panel-primary image-border">
+                        <div class="panel-body"><img src="" class="toggler img-responsive vegetarian active"
+                                style="width:100%" alt="Image"></div>
+                        <div class="panel-footer">VEGETARIAN</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-primary image-border">
+                        <div class="panel-body"><img src="" class="toggler img-responsive vegan active"
+                                style="width:100%" alt="Image"></div>
+                        <div class="panel-footer">VEGAN</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-primary image-border">
+                        <div class="panel-body"><img src="" class="toggler img-responsive gluten-free active"
+                                style="width:100%" alt="Image"></div>
+                        <div class="panel-footer">GLUTEN-FREE</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-primary image-border">
+                        <div class="panel-body"><img src="" class="toggler img-responsive farmers-market active"
+                                style="width:100%" alt="Image"></div>
+                        <div class="panel-footer">Farmers Market</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row search-btn">
+                <div class="col-sm-6">
+                        <!-- <button onclick="clearBox('cart_item')" class="btn btn-primary"></button> -->
+                        <input class="btn btn-primary reset" id="reset" type="reset" value="Reset">
+                    <!-- <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Search Distance
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">5 Miles</a>
+                            <a class="dropdown-item" href="#">10 Miles</a>
+                            <a class="dropdown-item" href="#">20 Miles</a>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-sm-6">
+                    <div class="btn-display">
+                        <button type="button" class="btn btn-secondary" type="submit" id="searchButton">Search</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row bottom-display">
+            <div class="col-sm-6 map-display">
+                <div id="map"></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="results-display display">
+                    <table class='table-hover' id="results">
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+            <script src="assets/javascript/js.js"></script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0fkNiqS5pR7EwGX8Ogau_XYce-hfD2K0&callback=initMap&libraries=places">
+                </script>
+</body>
+
+</html>
